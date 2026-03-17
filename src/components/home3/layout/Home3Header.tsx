@@ -128,7 +128,7 @@ function DropdownMenu({
                         }}
                       />
                       <span
-                        className="text-[15px] font-bold uppercase tracking-wider"
+                        className="text-sm font-bold uppercase tracking-wider"
                         style={{ color: "#D09947" }}
                       >
                         {column.heading}
@@ -139,7 +139,7 @@ function DropdownMenu({
                         <Link
                           key={link.label}
                           href={link.href}
-                          className="text-[15px] text-white/70 hover:text-white transition-colors py-1.5"
+                          className="text-sm text-white/70 hover:text-white transition-colors py-1.5"
                         >
                           {link.label}
                         </Link>
@@ -154,7 +154,7 @@ function DropdownMenu({
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="block px-5 py-3 text-[15px] text-white/80 hover:text-[#EEC569] hover:bg-white/5 transition-all font-medium"
+                    className="block px-5 py-3 text-sm text-white/80 hover:text-[#EEC569] hover:bg-white/5 transition-all font-medium"
                   >
                     {link.label}
                   </Link>
