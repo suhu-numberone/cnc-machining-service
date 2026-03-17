@@ -1,0 +1,156 @@
+/* Home3 Theme - Based on Frame 1.jpg design */
+.home3-root {
+  /* Colors from design */
+  --h3-gold: #D4A03A;
+  --h3-gold-light: #E8C068;
+  --h3-gold-dark: #B8862E;
+  --h3-black: #0A0A0A;
+  --h3-dark: #111111;
+  --h3-charcoal: #1A1A1A;
+  --h3-card: #1E1E1E;
+  --h3-gray: #2A2A2A;
+  --h3-text: #FFFFFF;
+  --h3-text-muted: #888888;
+  --h3-text-dim: #666666;
+  --h3-border: #333333;
+
+  /* Fonts */
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-playfair), Georgia, serif;
+
+  /* Base */
+  background-color: var(--h3-black);
+  color: var(--h3-text);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+/* Typography */
+.home3-root h1,
+.home3-root h2,
+.home3-root h3 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+.home3-root .h3-display {
+  font-family: var(--font-display);
+  font-style: italic;
+}
+
+/* Gold text */
+.home3-root .h3-gold {
+  color: var(--h3-gold);
+}
+
+/* Gold gradient */
+.home3-root .h3-gold-gradient {
+  background: linear-gradient(135deg, var(--h3-gold), var(--h3-gold-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section backgrounds */
+.home3-root .h3-bg-black {
+  background-color: var(--h3-black);
+}
+
+.home3-root .h3-bg-dark {
+  background-color: var(--h3-dark);
+}
+
+.home3-root .h3-bg-charcoal {
+  background-color: var(--h3-charcoal);
+}
+
+.home3-root .h3-bg-gold {
+  background-color: var(--h3-gold);
+}
+
+/* Cards */
+.home3-root .h3-card {
+  background-color: var(--h3-card);
+  border: 1px solid var(--h3-border);
+  border-radius: 12px;
+}
+
+.home3-root .h3-card:hover {
+  border-color: var(--h3-gold);
+}
+
+/* Button primary (gold) */
+.home3-root .h3-btn-primary {
+  background-color: var(--h3-gold);
+  color: var(--h3-black);
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.home3-root .h3-btn-primary:hover {
+  background-color: var(--h3-gold-light);
+}
+
+/* Button outline */
+.home3-root .h3-btn-outline {
+  background: transparent;
+  color: var(--h3-text);
+  border: 1px solid var(--h3-border);
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.home3-root .h3-btn-outline:hover {
+  border-color: var(--h3-gold);
+  color: var(--h3-gold);
+}
+
+/* Icon box */
+.home3-root .h3-icon-box {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--h3-gold), var(--h3-gold-dark));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Stats number */
+.home3-root .h3-stat {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--h3-text);
+}
+
+/* Gold banner section */
+.home3-root .h3-gold-section {
+  background: linear-gradient(135deg, var(--h3-gold-dark), var(--h3-gold));
+  color: var(--h3-black);
+}
+
+/* Certification badge */
+.home3-root .h3-cert-badge {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--h3-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FAQ accordion */
+.home3-root .h3-faq-item {
+  background: var(--h3-charcoal);
+  border: 1px solid var(--h3-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.home3-root .h3-faq-item.active {
+  border-color: var(--h3-gold);
+}
